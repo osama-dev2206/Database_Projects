@@ -5,6 +5,8 @@ This repository contains a set of database design exercises. Each project is org
 - ERD
 - Relational schema
 - Database design
+- Database Backup
+- Sql queries
 
 ## Projects
 
