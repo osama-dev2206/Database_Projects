@@ -1,20 +1,19 @@
 # Database Projects
 
-This workspace is a collection of database design exercises built around real-world scenarios. Each project is intended to document the same core ideas from different domains, including entity modeling, relational design, SQL implementation, and supporting documentation.
+This repo is a collection of database design exercises built around real-world scenarios. Each project is intended to document the same core ideas from different domains, including entity modeling, relational design, SQL implementation, and supporting documentation.
 
-<<<<<<< HEAD
 - ERD
 - Relational schema
 - Database design
 - Database Backup
 - Sql queries
-=======
+
 ## Workspace Overview
 
 The repository is organized as a set of independent project folders. Each folder can contain diagrams, SQL scripts, supporting documentation, and any database backup or deliverable files that belong to that scenario.
 
 At the moment, only Project 1 has been fully developed. The remaining folders are present as placeholders for future work and can be expanded using the same structure when needed.
->>>>>>> 1976c93 (Update Index Page)
+
 
 ## Projects
 
