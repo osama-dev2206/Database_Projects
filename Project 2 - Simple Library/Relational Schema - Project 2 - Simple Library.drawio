@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="Zk_2pc1_gUzyAgNU6dPZ">
-    <mxGraphModel dx="1700" dy="443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1545" dy="362" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -316,7 +316,7 @@
             <mxRectangle height="30" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ea8dwJaSt80vfhBHH71X-38" parent="Ea8dwJaSt80vfhBHH71X-36" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="Return Date&amp;nbsp;" vertex="1">
+        <mxCell id="Ea8dwJaSt80vfhBHH71X-38" parent="Ea8dwJaSt80vfhBHH71X-36" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="Actual Return Date&amp;nbsp;" vertex="1">
           <mxGeometry height="30" width="219" x="30" as="geometry">
             <mxRectangle height="30" width="219" as="alternateBounds" />
           </mxGeometry>
@@ -342,7 +342,7 @@
             <mxRectangle height="70" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ea8dwJaSt80vfhBHH71X-44" parent="Ea8dwJaSt80vfhBHH71X-42" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div&gt;Borrowing User Card ID&lt;/div&gt;&lt;div&gt;Borrowing Book Copy ID&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="Ea8dwJaSt80vfhBHH71X-44" parent="Ea8dwJaSt80vfhBHH71X-42" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div&gt;Borrowing User ID&lt;/div&gt;&lt;div&gt;Borrowing Book Copy ID&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="219" x="30" as="geometry">
             <mxRectangle height="70" width="219" as="alternateBounds" />
           </mxGeometry>
