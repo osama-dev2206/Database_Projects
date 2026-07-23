@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="Zk_2pc1_gUzyAgNU6dPZ">
-    <mxGraphModel dx="1847" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1438" dy="307" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -759,6 +759,15 @@
         </mxCell>
         <mxCell id="Ea8dwJaSt80vfhBHH71X-157" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="int" vertex="1">
           <mxGeometry height="30" width="60" x="765" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="Ea8dwJaSt80vfhBHH71X-171" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" value="Settings" vertex="1">
+          <mxGeometry height="86" width="160" x="-120" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="Ea8dwJaSt80vfhBHH71X-172" parent="Ea8dwJaSt80vfhBHH71X-171" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="Allowed Borrow Days" vertex="1">
+          <mxGeometry height="30" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ea8dwJaSt80vfhBHH71X-173" parent="Ea8dwJaSt80vfhBHH71X-171" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="The Fine Amount Per Day" vertex="1">
+          <mxGeometry height="30" width="160" y="56" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
