@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="Zk_2pc1_gUzyAgNU6dPZ">
-    <mxGraphModel dx="2057" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1847" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -358,7 +358,7 @@
             <mxRectangle height="30" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ea8dwJaSt80vfhBHH71X-48" parent="Ea8dwJaSt80vfhBHH71X-46" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="Library Card Num" vertex="1">
+        <mxCell id="Ea8dwJaSt80vfhBHH71X-48" parent="Ea8dwJaSt80vfhBHH71X-46" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="User ID" vertex="1">
           <mxGeometry height="30" width="174" x="30" as="geometry">
             <mxRectangle height="30" width="174" as="alternateBounds" />
           </mxGeometry>
@@ -384,7 +384,7 @@
             <mxRectangle height="30" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ea8dwJaSt80vfhBHH71X-54" parent="Ea8dwJaSt80vfhBHH71X-52" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="Ea8dwJaSt80vfhBHH71X-54" parent="Ea8dwJaSt80vfhBHH71X-52" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="User Library Nun" vertex="1">
           <mxGeometry height="30" width="174" x="30" as="geometry">
             <mxRectangle height="30" width="174" as="alternateBounds" />
           </mxGeometry>
@@ -756,6 +756,9 @@
         </mxCell>
         <mxCell id="Ea8dwJaSt80vfhBHH71X-155" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Tiny int" vertex="1">
           <mxGeometry height="30" width="60" x="110" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="Ea8dwJaSt80vfhBHH71X-157" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="int" vertex="1">
+          <mxGeometry height="30" width="60" x="765" y="1240" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
