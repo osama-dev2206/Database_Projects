@@ -181,7 +181,7 @@
         <mxCell id="gZQVOHIruEfRBCNEV0SU-77" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Requires&lt;/font&gt;" vertex="1">
           <mxGeometry height="90" width="150" x="-260" y="1220" as="geometry" />
         </mxCell>
-        <mxCell id="gZQVOHIruEfRBCNEV0SU-82" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Make&lt;/font&gt;" vertex="1">
+        <mxCell id="gZQVOHIruEfRBCNEV0SU-82" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="Requires" vertex="1">
           <mxGeometry height="90" width="150" x="200" y="1410" as="geometry" />
         </mxCell>
         <mxCell id="gZQVOHIruEfRBCNEV0SU-84" edge="1" parent="1" source="gZQVOHIruEfRBCNEV0SU-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=ERmandOne;endFill=0;startArrow=none;startFill=0;" target="gZQVOHIruEfRBCNEV0SU-73">
@@ -291,7 +291,7 @@
         <mxCell id="VDkig2hT3StvH1Z2EJDK-13" parent="1" style="shape=associativeEntity;whiteSpace=wrap;html=1;align=center;" value="Trains With" vertex="1">
           <mxGeometry height="60" width="140" x="310" y="750" as="geometry" />
         </mxCell>
-        <mxCell id="VDkig2hT3StvH1Z2EJDK-15" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="Has" vertex="1">
+        <mxCell id="VDkig2hT3StvH1Z2EJDK-15" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="FOR" vertex="1">
           <mxGeometry height="60" width="120" x="770" y="1330" as="geometry" />
         </mxCell>
         <mxCell id="VDkig2hT3StvH1Z2EJDK-16" edge="1" parent="1" source="gZQVOHIruEfRBCNEV0SU-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=ERzeroToMany;startFill=0;" target="VDkig2hT3StvH1Z2EJDK-15">
