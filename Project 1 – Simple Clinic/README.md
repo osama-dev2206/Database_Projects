@@ -1,145 +1,264 @@
 # Simple Clinic Database Project 
 
-This project documents and implements a small clinic database for managing patients, doctors, appointments, medical records, prescriptions, and payments.
+This project is a relational database design for a small clinic management system. It covers the core workflows needed to manage patients, doctors, appointments, medical records, prescriptions, and payments.
 
-The database design exists in the project folder : [Simple_Clinic_Database.bak](./Simple_Clinic_Database.bak).
+The database is implemented with SQL scripts:
 
-## Project Overview
+- `DDL.sql` creates the tables, keys, and constraints.
+- `DML.sql` inserts sample data for patients, doctors, appointments, medical records, prescriptions, and payments.
+- `Index.sql` creates performance indexes.
+- `Views.sql` creates reusable views for reporting and joined person information.
 
-The schema follows a normalized relational design centered on shared person details, with separate entities for clinical activity, billing, and reporting. The folder also includes the ERD and relational schema diagrams used to describe the structure visually.
+## Index
 
-## Project Files
+- [Overview](#overview)
+- [Requirements Coverage](#requirements-coverage)
+  - [1. Patient Management](#1-patient-management)
+  - [2. Doctor Management](#2-doctor-management)
+  - [3. Appointments Management](#3-appointments-management)
+  - [4. Medical Records](#4-medical-records)
+  - [5. Prescriptions](#5-prescriptions)
+  - [6. Payment Management](#6-payment-management)
+- [Database Diagrams](#database-diagrams)
+  - [ERD](#erd)
+  - [Relational Schema](#relational-schema)
+- [Database Structure](#database-structure)
+- [Views](#views)
+- [Sample Data Included](#sample-data-included)
+- [How the System Works](#how-the-system-works)
 
-- [DDL.sql](./DDL.sql) creates the database and defines the tables, keys, and constraints.
-- [DML.sql](./DML.sql) inserts sample data.
-- [Index.sql](./Index.sql) creates performance indexes.
-- [Views.sql](./Views.sql) creates reporting views.
-- [Simple_Clinic_Database.bak](./Simple_Clinic_Database.bak) contains the existing database backup.
-- [ERD – Simple Clinic.drawio.svg](./ERD%20%E2%80%93%20Simple%20Clinic.drawio.svg) shows the entity-relationship diagram.
-- [Relational Schema – Simple Clinic.drawio.svg](./Relational%20Schema%20%E2%80%93%20Simple%20Clinic.drawio.svg) shows the relational schema.
+## Overview
 
-## Requirements
+The Concept of the project is to model a simple but practical clinic workflow where:
 
-## 1. Patients
+- each person can be registered as a patient or a doctor,
+- patients can schedule appointments with doctors,
+- each appointment can result in a medical record,
+- medical records can include prescribed medications,
+- and payments can be processed for each appointment.
 
-- Store information about patients.
-- Each patient must have:
-  - Unique identifier
-  - **Name**
-  - **Date of birth**
-  - **Gender**
-  - **Contact information (phone number, email)**
-  - **Address**
+## Requirements Coverage
 
-## 2. Doctors
+### 1. Patient Management
 
-- Store information about doctors.
-- Each doctor must have:
-  - Unique identifier
-  - **Name**
-  - Specialization
-  - **Date of birth**
-  - **Gender**
-  - **Contact information (phone number, email)**
-  - **Address**
+The schema stores patient information in `Patient` and shared identity details in `Person`.
 
-## 3. Appointments
+- `Person` keeps the basic details like name, date of birth, gender, and address.
+- `Patient` represents a person in the role of a patient.
+- `Phone` stores one or more phone numbers per person.
+- `Email` stores one or more email addresses per person.
 
-- Store information about appointments.
-- Each appointment must have:
-  - **Unique identifier**
-  - Patient
-  - Doctor
-  - **Appointment date and time**
-  - **Appointment status**
+### 2. Doctor Management
 
-**Appointment Status Options:**
+The schema stores doctor information in `Doctor` and shared identity details in `Person`.
 
-1. Pending – scheduled but not yet occurred
-2. Confirmed – confirmed by patient and provider
-3. Completed – appointment took place as scheduled
-4. Cancelled – cancelled by patient or provider
-5. Rescheduled – moved to a different date/time
-6. No Show – patient did not attend without cancelling
+- `Doctor` contains the doctor's specialization and links to the `Person` table.
 
-## 4. Medical Records
+### 3. Appointments Management
 
-- Store medical records for patients.
-- Each attended appointment must have a medical record.
-- Each medical record must include:
-  - **Unique identifier**
-  - Patient
-  - Doctor
-  - **Description of visit**
-  - **Diagnosis**
-  - **Prescribed medication**
-  - **Additional notes**
+Appointment activity is recorded in `Appointment`.
 
-## 5. Prescription
+- Each record links a patient and a doctor.
+- It stores the appointment date/time and the status (e.g., Pending, Confirmed, Completed, Cancelled, Rescheduled, NoShow).
 
-- Store information about prescribed medications.
-- At most one prescription per medical record.
-- Each prescription must include:
-  - Unique identifier
-  - Medical record reference
-  - Medication name
-  - Dosage
-  - Frequency
-  - Start date
-  - End date
-  - Special instructions
+### 4. Medical Records
 
-## 6. Payments
+Medical outcomes are stored in `MedicalRecord`.
 
-- Store information about payments.
-- Payment is per appointment.
-- Each payment must include:
-  - **Unique identifier**
-  - Patient
-  - **Payment date**
-  - **Payment method**
-  - **Amount paid**
-  - **Additional notes**
+- Each record represents the clinical outcome of a visit, including diagnosis and visit description.
+- Linked to the appointment.
 
----
+### 5. Prescriptions
 
-## Solution
+Prescription details are managed in `Prescription`.
 
-### Database Note
+- Stores details like medication name, dosage, frequency, and start/end dates.
+- Associated uniquely with a specific medical record.
 
-The database design exists in the backup file [Simple_Clinic_Database.bak](./Simple_Clinic_Database.bak). If you need to inspect or restore the database, start from that file.
+### 6. Payment Management
 
-### Project Files
+Payment tracking is handled in `Payment`.
 
-- [DDL.sql](./DDL.sql) creates the database tables and constraints.
-- [DML.sql](./DML.sql) inserts sample clinic data.
-- [Index.sql](./Index.sql) defines indexes.
-- [Views.sql](./Views.sql) defines reporting views.
-- [Simple_Clinic_Database.bak](./Simple_Clinic_Database.bak) is the existing database backup.
+- Stores payment date, method, and amount paid for an appointment.
+
+## Database Diagrams
 
 ### ERD
 
-![ERD - Simple Clinic](./ERD%20%E2%80%93%20Simple%20Clinic.drawio.svg)
+![ERD diagram](ERD%20%E2%80%93%20Simple%20Clinic.drawio.svg)
 
 ### Relational Schema
 
-![Relational Schema - Simple Clinic](./Relational%20Schema%20%E2%80%93%20Simple%20Clinic.drawio.svg)
+![Relational schema diagram](Relational%20Schema%20%E2%80%93%20Simple%20Clinic.drawio.svg)
 
-### Database Design
+## Database Structure
 
-The schema is designed around patients, doctors, appointments, medical records, prescriptions, and payments. The implementation is included in the backup file listed above.
+### `Person`
 
-## Implementation Summary
+Stores shared identity details for both patients and doctors.
 
-- `Person` stores shared identity details.
-- `Patient` and `Doctor` extend `Person` with role-specific data.
-- `Phone` and `Email` store contact information.
-- `Appointment` links patients, doctors, payments, and medical records.
-- `MedicalRecord` stores the clinical outcome of a visit.
-- `Prescription` stores medication details tied to a medical record.
-- `Payment` stores billing information for appointments.
+Fields:
 
-## Notes
+- `PersonId` primary key
+- `Name`
+- `DateOfBirth`
+- `Gender`
+- `Address`
 
-- The scripts and diagrams in this folder are enough to understand the full design without opening the backup.
-- The project is intended for Microsoft SQL Server.
+### `Phone`
+
+Stores phone numbers associated with a person.
+
+Fields:
+
+- `PhoneId` primary key
+- `PhoneNumber`
+- `PersonId` foreign key to `Person`
+
+### `Email`
+
+Stores email addresses associated with a person.
+
+Fields:
+
+- `EmailId` primary key
+- `Email`
+- `PersonId` foreign key to `Person`
+
+### `Doctor`
+
+Stores details specific to doctors.
+
+Fields:
+
+- `DoctorId` primary key
+- `Specialization`
+- `PersonId` foreign key to `Person`
+
+### `Patient`
+
+Stores details specific to patients.
+
+Fields:
+
+- `PatientId` primary key
+- `PersonId` foreign key to `Person`
+
+### `MedicalRecord`
+
+Stores the clinical outcomes and visit details.
+
+Fields:
+
+- `MedicalRecordId` primary key
+- `Diagnosis`
+- `AdditionalNotes`
+- `DescriptionOfVisit`
+
+### `Prescription`
+
+Stores medication details tied to a medical record.
+
+Fields:
+
+- `PrescriptionId` primary key
+- `MedicalId` foreign key to `MedicalRecord`, unique
+- `Freq`
+- `StartDate`
+- `EndDate`
+- `SpecialInstructions`
+- `MedicalName`
+- `Dosage`
+
+### `Payment`
+
+Stores billing information for appointments.
+
+Fields:
+
+- `PaymentId` primary key
+- `PaymentMethod`
+- `PaymentDate`
+- `AdditionalNotes`
+- `AmountPaid`
+
+### `Appointment`
+
+Links patients, doctors, payments, and medical records.
+
+Fields:
+
+- `AppointmentId` primary key
+- `DoctorId` foreign key to `Doctor`
+- `PatientId` foreign key to `Patient`
+- `PaymentId` foreign key to `Payment`
+- `MedicalRecordId` foreign key to `MedicalRecord`
+- `AppointmentDateTime`
+- `AppoitmentStatus`
+
+## Views
+
+### `DoctorsFullDetails`
+
+Returns each doctor combined with their personal details from `Person`.
+
+Useful for:
+
+- retrieving full profiles of doctors,
+- including specialization and contact information.
+
+### `PatientFullDetails`
+
+Returns each patient combined with their personal details from `Person`.
+
+Useful for:
+
+- front-desk lookup,
+- retrieving full profiles of patients.
+
+### `AppointmentDetails`
+
+Returns a comprehensive summary of an appointment.
+
+Useful for:
+
+- combining appointment time, status, doctor name, patient name, payment details, and diagnosis into a single view.
+
+## Sample Data Included
+
+The `DML.sql` file seeds the database with:
+
+- 2 people (one patient, one doctor),
+- their phone numbers and emails,
+- 1 medical record,
+- 1 payment,
+- 1 prescription,
+- and 2 appointments (one scheduled, one completed).
+
+This makes it easier to test joins, views, and clinic workflows immediately after running the scripts.
+
+## How the System Works
+
+1. A person is registered in `Person` with contact details in `Phone` and `Email`.
+2. The person is assigned a role by being added to `Patient` or `Doctor`.
+3. A patient books a visit, creating a record in `Appointment`.
+4. When the visit happens, a `MedicalRecord` is created, and the appointment status is updated.
+5. If medication is needed, a `Prescription` is added, linked to the `MedicalRecord`.
+6. Billing is processed, adding a record to `Payment`, linked to the appointment.
+
+## Design Notes
+
+- The `Person` table uses an inheritance-like pattern (Is-A relationship) where `Patient` and `Doctor` extend it.
+- `AppoitmentStatus` has a check constraint restricting it to values like 'Pending', 'Confirmed', 'Completed', etc.
+- `Prescription.MedicalId` is constrained as unique to ensure at most one prescription is directly tied to a single medical record.
+- The `Appointment` table acts as a central hub linking the doctor, patient, payment, and medical record.
+
+## File Overview
+
+- `DDL.sql` creates the schema.
+- `DML.sql` loads sample records.
+- `Index.sql` creates performance indexes.
+- `Views.sql` defines reporting views.
+- `ERD – Simple Clinic.drawio.svg` shows the entity relationship diagram.
+- `Relational Schema – Simple Clinic.drawio.svg` shows the relational schema.
+- `Simple_Clinic_Database.bak` contains the existing database backup.
