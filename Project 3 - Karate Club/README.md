@@ -1,4 +1,4 @@
-# Karate Club Management System
+# Karate Club Database Project
 
 This project is a relational database design for a Karate Club management system. It covers the core workflows needed to manage members, instructors, belt testing, subscriptions, and financial payments.
 
