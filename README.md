@@ -13,7 +13,7 @@ This repository is a collection of relational database design exercises built ar
 
 The repository is organized as a collection of independent project folders. Each folder contains ERD and relational diagrams, SQL scripts (schema creation, seed data, views, indexes), project documentation, and working database backup deliverables.
 
-Currently, **Project 1 (Simple Clinic)** and **Project 2 (Simple Library)** are fully completed and serve as comprehensive reference designs. The remaining folders are structured as placeholders for upcoming database projects.
+Currently, **Project 1 (Simple Clinic)**, **Project 2 (Simple Library)**, and **Project 3 (Karate Club)** are fully completed and serve as comprehensive reference designs. The remaining folders are structured as placeholders for upcoming database projects.
 
 ---
 
@@ -23,7 +23,7 @@ Currently, **Project 1 (Simple Clinic)** and **Project 2 (Simple Library)** are 
 | --- | --- | --- |
 | [Project 1 – Simple Clinic](Project%201%20%E2%80%93%20Simple%20Clinic/README.md) | **Complete** | Healthcare clinic database managing patients, doctors, appointments, medical records, prescriptions, and billing/payments. |
 | [Project 2 - Simple Library](Project%202%20-%20Simple%20Library/README.md) | **Complete** | Library management system tracking books, physical copies, authors, user profiles, borrowing history, holds/reservations, and fine tracking. |
-| Project 3 - Karate Club | *Not started* | Reserved for a karate club membership and belt progression database system. |
+| [Project 3 - Karate Club](Project%203%20-%20Karate%20Club/README.md) | **Complete** | Karate club database managing members, instructors, belt ranks, testing, subscriptions, and financial payments. |
 | Project 4 - Car Rental | *Not started* | Reserved for a vehicle fleet rental and reservation database project. |
 | Project 5 - Online Store | *Not started* | Reserved for an e-commerce store database covering products, orders, customers, and inventory. |
 
@@ -57,6 +57,19 @@ A relational database system modeling library inventory management, member borro
   - [View.sql](Project%202%20-%20Simple%20Library/View.sql)
   - [Simple_Library Database](Project%202%20-%20Simple%20Library/Simple_Library%20Database)
   - [ERD Diagram](Project%202%20-%20Simple%20Library/ERD-Project%202%20-%20Simple%20Library.drawio.svg) | [Relational Schema](Project%202%20-%20Simple%20Library/Relational%20Schema%20-%20Project%202%20-%20Simple%20Library.drawio.svg)
+
+### [Project 3: Karate Club](Project%203%20-%20Karate%20Club/README.md)
+
+A relational database system modeling Karate Club membership, instructor assignments, belt testing, and payment tracking.
+
+- **Core Domains**: Membership (`Persons`, `Members`, `Emails`, `Phones`), Instructors (`Instructors`, `Qualifications`, `MemberInstructors`), Ranks and Testing (`BeltRanks`, `BeltTests`), and Financials (`Payments`, `Subscriptions`).
+- **Key Deliverables**:
+  - [README](Project%203%20-%20Karate%20Club/README.md)
+  - [DDl.sql](Project%203%20-%20Karate%20Club/DDl.sql)
+  - [DML.sql](Project%203%20-%20Karate%20Club/DML.sql) and [DML2.sql](Project%203%20-%20Karate%20Club/DML2.sql)
+  - [Views.sql](Project%203%20-%20Karate%20Club/Views.sql)
+  - [Karate_Club Database.bak](Project%203%20-%20Karate%20Club/Karate_Club%20Database.bak)
+  - [ERD Diagram](Project%203%20-%20Karate%20Club/Erd-Project%203%20-%20Karate%20Club.drawio.svg) | [Relational Schema](Project%203%20-%20Karate%20Club/Relational%20Schema%20-%20Project%203%20-%20Karate%20Club.drawio.svg)
 
 ---
 
