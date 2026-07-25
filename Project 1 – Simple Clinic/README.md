@@ -1,4 +1,4 @@
-# Simple Clinic Database
+# Simple Clinic Database Project 
 
 This project documents and implements a small clinic database for managing patients, doctors, appointments, medical records, prescriptions, and payments.
 
