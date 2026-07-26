@@ -9,7 +9,7 @@ This repository is a collection of relational database design exercises built ar
 
 ## Project Timeline
 
-![Project Timeline](Time%20Line.svg)
+![Project Timeline](Time%20Line.jpg)
 
 ---
 
