@@ -7,13 +7,17 @@ This repository is a collection of relational database design exercises built ar
 - SQL Implementation Scripts (DDL, DML, Indexes, Views)
 - Database Backup Files & Runnable Samples
 
+## Project Timeline
+
+![Project Timeline](Time%20Line.svg)
+
 ---
 
 ## Workspace Overview
 
 The repository is organized as a collection of independent project folders. Each folder contains ERD and relational diagrams, SQL scripts (schema creation, seed data, views, indexes), project documentation, and working database backup deliverables.
 
-Currently, **Project 1 (Simple Clinic)**, **Project 2 (Simple Library)**, and **Project 3 (Karate Club)** are fully completed and serve as comprehensive reference designs. The remaining folders are structured as placeholders for upcoming database projects.
+Currently, **Project 1 (Simple Clinic)**, **Project 2 (Simple Library)**, **Project 3 (Karate Club)**, and **Project 4 (Car Rental)** are fully completed and serve as comprehensive reference designs. The remaining folders are structured as placeholders for upcoming database projects.
 
 ---
 
@@ -24,7 +28,7 @@ Currently, **Project 1 (Simple Clinic)**, **Project 2 (Simple Library)**, and **
 | [Project 1 – Simple Clinic](Project%201%20%E2%80%93%20Simple%20Clinic/README.md) | **Complete** | Healthcare clinic database managing patients, doctors, appointments, medical records, prescriptions, and billing/payments. |
 | [Project 2 - Simple Library](Project%202%20-%20Simple%20Library/README.md) | **Complete** | Library management system tracking books, physical copies, authors, user profiles, borrowing history, holds/reservations, and fine tracking. |
 | [Project 3 - Karate Club](Project%203%20-%20Karate%20Club/README.md) | **Complete** | Karate club database managing members, instructors, belt ranks, testing, subscriptions, and financial payments. |
-| Project 4 - Car Rental | *Not started* | Reserved for a vehicle fleet rental and reservation database project. |
+| [Project 4 - Car Rental](Project%204%20-%20Car%20Rental/README.md) | **Complete** | A relational database design for a Car Rental management system managing vehicles, customers, rental bookings, vehicle returns, and transactions. |
 | Project 5 - Online Store | *Not started* | Reserved for an e-commerce store database covering products, orders, customers, and inventory. |
 
 ---
@@ -70,6 +74,19 @@ A relational database system modeling Karate Club membership, instructor assignm
   - [Views.sql](Project%203%20-%20Karate%20Club/Views.sql)
   - [Karate_Club Database.bak](Project%203%20-%20Karate%20Club/Karate_Club%20Database.bak)
   - [ERD Diagram](Project%203%20-%20Karate%20Club/Erd-Project%203%20-%20Karate%20Club.drawio.svg) | [Relational Schema](Project%203%20-%20Karate%20Club/Relational%20Schema%20-%20Project%203%20-%20Karate%20Club.drawio.svg)
+
+### [Project 4: Car Rental Database](Project%204%20-%20Car%20Rental/README.md)
+
+A relational database design for a Car Rental management system managing vehicles, customers, rental bookings, vehicle returns, and transactions.
+
+- **Core Domains**: Vehicle Management (`Vehicles`, `VehicleCategories`, `FuelTypes`, `Maintenances`), Customer Management (`Customers`), Rental Booking (`RentalBookings`, `VehicleReturns`), and Billing (`RentalTransactions`).
+- **Key Deliverables**:
+  - [README](Project%204%20-%20Car%20Rental/README.md)
+  - [DDL.sql](Project%204%20-%20Car%20Rental/DDL.sql)
+  - [DML.sql](Project%204%20-%20Car%20Rental/DML.sql)
+  - [Views.sql](Project%204%20-%20Car%20Rental/Views.sql)
+  - [Car_Rental Database.bak](Project%204%20-%20Car%20Rental/Car_Rental%20Database.bak)
+  - [ERD Diagram](Project%204%20-%20Car%20Rental/ERD%20-%20Project%204%20-%20Car%20Rental%20.drawio.svg) | [Relational Schema](Project%204%20-%20Car%20Rental/Relational%20Schema%20-%20Project%204%20-%20Car%20Rental%20.drawio.svg)
 
 ---
 
