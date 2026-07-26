@@ -9,7 +9,8 @@ This repository is a collection of relational database design exercises built ar
 
 ## Project Timeline
 
-![Project Timeline](Time%20Line.jpg)
+<img width="1292" height="1751" alt="Time Line" src="https://github.com/user-attachments/assets/f4b5a4f3-5d10-40d1-a611-546f29be7c55" />
+
 
 ---
 
