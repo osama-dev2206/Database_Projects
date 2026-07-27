@@ -18,7 +18,7 @@ This repository is a collection of relational database design exercises built ar
 
 The repository is organized as a collection of independent project folders. Each folder contains ERD and relational diagrams, SQL scripts (schema creation, seed data, views, indexes), project documentation, and working database backup deliverables.
 
-Currently, **Project 1 (Simple Clinic)**, **Project 2 (Simple Library)**, **Project 3 (Karate Club)**, and **Project 4 (Car Rental)** are fully completed and serve as comprehensive reference designs. The remaining folders are structured as placeholders for upcoming database projects.
+Currently, **Project 1 (Simple Clinic)**, **Project 2 (Simple Library)**, **Project 3 (Karate Club)**, **Project 4 (Car Rental)**, and **Project 5 (Online Store)** are fully completed and serve as comprehensive reference designs.
 
 ---
 
@@ -30,7 +30,7 @@ Currently, **Project 1 (Simple Clinic)**, **Project 2 (Simple Library)**, **Proj
 | [Project 2 - Simple Library](Project%202%20-%20Simple%20Library/README.md) | **Complete** | Library management system tracking books, physical copies, authors, user profiles, borrowing history, holds/reservations, and fine tracking. |
 | [Project 3 - Karate Club](Project%203%20-%20Karate%20Club/README.md) | **Complete** | Karate club database managing members, instructors, belt ranks, testing, subscriptions, and financial payments. |
 | [Project 4 - Car Rental](Project%204%20-%20Car%20Rental/README.md) | **Complete** | A relational database design for a Car Rental management system managing vehicles, customers, rental bookings, vehicle returns, and transactions. |
-| Project 5 - Online Store | *Not started* | Reserved for an e-commerce store database covering products, orders, customers, and inventory. |
+| [Project 5 - Online Store](Project%205%20-%20Online%20Store/README.md) | **Complete** | Online store database managing products, customers, orders, payments, shipping, and reviews. |
 
 ---
 
@@ -88,6 +88,19 @@ A relational database design for a Car Rental management system managing vehicle
   - [Views.sql](Project%204%20-%20Car%20Rental/Views.sql)
   - [Car_Rental Database.bak](Project%204%20-%20Car%20Rental/Car_Rental%20Database.bak)
   - [ERD Diagram](Project%204%20-%20Car%20Rental/ERD%20-%20Project%204%20-%20Car%20Rental%20.drawio.svg) | [Relational Schema](Project%204%20-%20Car%20Rental/Relational%20Schema%20-%20Project%204%20-%20Car%20Rental%20.drawio.svg)
+
+### [Project 5: Online Store Database](Project%205%20-%20Online%20Store/README.md)
+
+A relational database design for an online store management system managing products, customers, orders, payments, shipping, and reviews.
+
+- **Core Domains**: Product Catalog (`Products`, `ProductCategories`, `Images`), Customer Management (`Customers`, `Reviews`), Order Management (`Orders`, `OrderItems`, `OrderStatuses`), and Logistics/Financials (`PaymentTransactions`, `Shippings`, `ShippingStatuses`).
+- **Key Deliverables**:
+  - [README](Project%205%20-%20Online%20Store/README.md)
+  - [DDL.sql](Project%205%20-%20Online%20Store/DDL.sql)
+  - [DML.sql](Project%205%20-%20Online%20Store/DML.sql)
+  - [Views.sql](Project%205%20-%20Online%20Store/Views.sql)
+  - [Online_Store Database .bak](Project%205%20-%20Online%20Store/Online_Store%20Database%20.bak)
+  - [ERD Diagram](Project%205%20-%20Online%20Store/ERD%20-%20Project%205%20-%20Online%20Store.drawio.svg) | [Relational Schema](Project%205%20-%20Online%20Store/Relational%20Schema%20-%20%20Project%205%20-%20Online%20Store.drawio.svg)
 
 ---
 
