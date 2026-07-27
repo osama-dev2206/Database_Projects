@@ -36,33 +36,32 @@ The Concept of the project is to model a practical Car Rental workflow where:
 
 ## Requirements Coverage
 
-### 1. Vehicle Management
+**. Customer Management:**
 
-The schema stores vehicle information using `Vehicles`, `VehicleCategories`, and `FuelTypes`.
+- **Customer Management:** The system should save **customers** personal information: Name, contact information, and a driver's license number.
 
-- `Vehicles` tracks specific details like model, make, year, mileage, rental price, and availability.
-- `VehicleCategories` classifies vehicles (e.g., Sedan, SUV, Luxury).
-- `FuelTypes` defines the type of fuel used (e.g., Gasoline, Electric).
-- `Maintenances` records service history and repair costs for vehicles.
+**2. Vehicles Information:**
 
-### 2. Customer Management
+- The system should maintain an up-to-date information of available **vehicles**, including information such as make, model, year, mileage, and rental rates, fuel type (Gaz, Electric, .etc.), plate number, Vehicle Category (4x4, Sedan, ..etc.)
+- **Vehicle Fuel Types:**
+    - Gasoline (Petrol).
+    - Diesel
+    - Electric
+    - Hybrid
 
-Customer details are handled in the `Customers` table.
+**3. Vehicle Booking:**
 
-- `Customers` stores personal information like name, driver's license number, and contact info to identify renters.
+- When a customer rents a vehicle System should keep booking information: customer who rented this vehicle, rental start date, rental end date, pickup location, drop of location, Initial rental days, initial total due amount, initial vehicle check notes.
 
-### 3. Rental Booking Process
+**4. Rental Transaction:**
 
-The rental lifecycle is managed by `RentalBookings` and `VehicleReturns`.
+- Customer should **pay** for the rent and a transaction should be logged in the system to keep the following information: Payment Details, initial paid amount.
 
-- `RentalBookings` captures the rental agreement, including start/end dates, pickup/drop-off locations, rental days, and initial vehicle condition notes.
-- `VehicleReturns` records the actual return details, consumed mileage, final condition, and any additional charges incurred upon return.
+**5. Vehicle Return:**
 
-### 4. Billing and Transactions
-
-Financial tracking is consolidated in the `RentalTransactions` table.
-
-- `RentalTransactions` links bookings and returns to track initial payments, payment status, actual total due amounts, remaining balances, and refunds.
+- When **customer** returns a **vehicle**, the system should calculate and keep the Actual Return Date, calculate actual rental days, record the final vehicle check notes, specify if there are additional charges.
+- Original Transaction should be updated and record all differences in reservation and calculate the actual final amount due, and calculate the remaining amount, if the customer need refund, we pay it back.
+- Save the current Milage, and calculate the consumed Mileage by customer during the rent period.
 
 ## Database Diagrams
 
