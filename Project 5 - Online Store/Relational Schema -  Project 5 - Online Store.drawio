@@ -196,7 +196,7 @@
             <mxRectangle height="60" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ja0cbrw0dLeqEoFqTQzJ-47" parent="ja0cbrw0dLeqEoFqTQzJ-45" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div&gt;Ordered Product Id : int&amp;nbsp;&lt;/div&gt;&lt;div&gt;Order Customer Id : int&lt;/div&gt;" vertex="1">
+        <mxCell id="ja0cbrw0dLeqEoFqTQzJ-47" parent="ja0cbrw0dLeqEoFqTQzJ-45" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;nbsp;Order Customer Id : int&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="180" x="30" as="geometry">
             <mxRectangle height="60" width="180" as="alternateBounds" />
           </mxGeometry>
@@ -222,7 +222,7 @@
             <mxRectangle height="90" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ja0cbrw0dLeqEoFqTQzJ-53" parent="ja0cbrw0dLeqEoFqTQzJ-51" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div&gt;Shipping Method : varchar(100)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Order Status Id : int&amp;nbsp;&lt;/div&gt;&lt;div&gt;Payment Transaction Id : int&lt;/div&gt;&lt;div&gt;Shipping Order Id : int&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="ja0cbrw0dLeqEoFqTQzJ-53" parent="ja0cbrw0dLeqEoFqTQzJ-51" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div&gt;Shipping Method : varchar(100)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Status Id : int&amp;nbsp;&lt;/div&gt;&lt;div&gt;Payment Id : int&lt;/div&gt;&lt;div&gt;Shipping Order Id : int&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="180" x="30" as="geometry">
             <mxRectangle height="90" width="180" as="alternateBounds" />
           </mxGeometry>
@@ -299,7 +299,7 @@
             <mxRectangle height="30" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ja0cbrw0dLeqEoFqTQzJ-73" parent="ja0cbrw0dLeqEoFqTQzJ-71" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="Payment Id : int&amp;nbsp;" vertex="1">
+        <mxCell id="ja0cbrw0dLeqEoFqTQzJ-73" parent="ja0cbrw0dLeqEoFqTQzJ-71" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="Payment Transaction : Id" vertex="1">
           <mxGeometry height="30" width="230" x="30" as="geometry">
             <mxRectangle height="30" width="230" as="alternateBounds" />
           </mxGeometry>
@@ -420,7 +420,7 @@
             <mxRectangle height="30" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ja0cbrw0dLeqEoFqTQzJ-116" parent="ja0cbrw0dLeqEoFqTQzJ-114" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="Order&amp;nbsp;Purchased Product Id :int&amp;nbsp;" vertex="1">
+        <mxCell id="ja0cbrw0dLeqEoFqTQzJ-116" parent="ja0cbrw0dLeqEoFqTQzJ-114" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="Order item :int&amp;nbsp;" vertex="1">
           <mxGeometry height="30" width="220" x="30" as="geometry">
             <mxRectangle height="30" width="220" as="alternateBounds" />
           </mxGeometry>
@@ -459,7 +459,7 @@
             <mxRectangle height="70" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ja0cbrw0dLeqEoFqTQzJ-125" parent="ja0cbrw0dLeqEoFqTQzJ-123" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div&gt;Quantity : Int&amp;nbsp;&lt;/div&gt;&lt;div&gt;Total Items Price : money&amp;nbsp;&lt;/div&gt;&lt;div&gt;Price For Product : money&amp;nbsp;&lt;/div&gt;" vertex="1">
+        <mxCell id="ja0cbrw0dLeqEoFqTQzJ-125" parent="ja0cbrw0dLeqEoFqTQzJ-123" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div&gt;Quantity Ordered : Int&amp;nbsp;&lt;/div&gt;&lt;div&gt;Total Items Price : money&amp;nbsp;&lt;/div&gt;&lt;div&gt;Price For Product : money&amp;nbsp;&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="220" x="30" as="geometry">
             <mxRectangle height="70" width="220" as="alternateBounds" />
           </mxGeometry>
