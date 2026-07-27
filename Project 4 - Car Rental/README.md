@@ -36,7 +36,7 @@ The Concept of the project is to model a practical Car Rental workflow where:
 
 ## Requirements Coverage
 
-**. Customer Management:**
+**1. Customer Management:**
 
 - **Customer Management:** The system should save **customers** personal information: Name, contact information, and a driver's license number.
 
